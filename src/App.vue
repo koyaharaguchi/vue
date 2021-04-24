@@ -1,14 +1,12 @@
-<template>
-  <div>Hello {{ value }}</div>
-</template>
+<div id="app">
+  {{ message }}
+</div>
 
 <script>
-export default {
-  name: "App",
-  data() {
-    return {
-      value: "World"
-    };
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
   }
-};
+})
 </script>
